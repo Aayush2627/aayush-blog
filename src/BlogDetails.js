@@ -3,7 +3,7 @@ import useFetch from "./useFetch";
 
 const BlogDetails = () => {
     const {id}=useParams();
-    const {data:blog,error,isPending}=useFetch('http://localhost:8000/blogs/'+id);
+    const {data:blog,error,isPending}=useFetch('https://json-api-rf9d.onrender.com/blogs/'+id);
     const history=useHistory();
     const buttonHandler=()=>{
         fetch("http://localhost:8000/blogs/"+blog.id,{

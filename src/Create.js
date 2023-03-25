@@ -11,7 +11,7 @@ const Create = () => {
     e.preventDefault();
     setIsPending(true);
     const blog={title ,body ,author};
-    fetch("http://localhost:8000/blogs",{
+    fetch("https://json-api-rf9d.onrender.com/blogs",{
       method:"POST",
       headers:{"content-type":"application/json"},
       body:JSON.stringify(blog)
